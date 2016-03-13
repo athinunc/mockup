@@ -1,0 +1,96 @@
+<!-- BEGIN CONTENT -->
+<style type="text/css">
+.passkit_template{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 640px;
+    z-index: 110;
+    background: url('<%= asset_path('passkit_template/iphone_black.png')%>');
+    background-size: 300px 567px;
+    background-repeat: no-repeat;
+    padding-top:125px;
+    padding-left: 26px;
+}
+.passkit_container{
+    background: red;
+    width: 245px;
+    height: 342px;
+    margin-top: 0px;
+    border: 0px solid #d6d6d6;
+    position: relative;
+}
+.passkit_header{
+    width: 245px;
+    height: 50px;
+    position: relative;
+    background-color: blue;
+}
+.passkit_content{
+    width: 245px;
+    height: 218px;
+    position: relative;
+    background-color: green;
+}
+.passkit_barcode{
+    width: 245px;
+    height: 77px;
+    position: relative;
+    background-color: yellow;
+    text-align: center;
+    padding-top: 8px;
+    padding-left: 5px;
+}
+.barcode_wrapper{
+    width: 235px;
+    position: relative;
+    padding: 5px 7px 0;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    text-align: center;
+}
+</style>
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="passkit_template">
+                    <div class="passkit_container">
+                        <div class="passkit_header">Header</div>
+                        <div class="passkit_content"></div>
+                        <div class="passkit_barcode">
+                            <div class="barcode_wrapper">
+                                <img src="<%= asset_path('passkit_template/barcode.png')%>"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8">
+                <div class="portlet light bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-blue">
+                            <span class="caption-subject bold uppercase">Choose Pass Content</span>
+                            <span class="caption-helper">select content and preview</span>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="btn btn-circle green btn-outline btn-sm">
+                                <i class="fa fa-pencil"></i> Edit </a>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
